@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joyeux anniversaire</title>
+  <meta name="description" content="Une petite page rien que pour toi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Coeur réutilisable partout dans la page -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="heart" viewBox="0 0 32 29">
+      <path d="M16 28C14 26 2 18 2 9.5 2 5 5.5 2 9.5 2c2.6 0 5 1.4 6.5 3.8C17.5 3.4 19.9 2 22.5 2 26.5 2 30 5 30 9.5 30 18 18 26 16 28z"/>
+    </symbol>
+  </svg>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="#accueil">Pour toi</a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a>
+      <a href="#souvenirs">Souvenirs</a>
+      <a href="#mots">Mots doux</a>
+      <a href="#surprise">Surprise</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ ACCUEIL ============ -->
+    <section class="hero" id="accueil">
+      <svg class="heart hero__heart h1" aria-hidden="true"><use href="#heart"/></svg>
+      <svg class="heart hero__heart h2" aria-hidden="true"><use href="#heart"/></svg>
+      <svg class="heart hero__heart h3" aria-hidden="true"><use href="#heart"/></svg>
+      <svg class="heart hero__heart h4" aria-hidden="true"><use href="#heart"/></svg>
+      <svg class="heart hero__heart h5" aria-hidden="true"><use href="#heart"/></svg>
+      <svg class="heart hero__heart h6" aria-hidden="true"><use href="#heart"/></svg>
+
+      <div class="hero__content">
+        <p class="hero__date" data-date>14 novembre 2026</p>
+        <h1 class="hero__title">
+          <span class="hero__line">Joyeux anniversaire,</span>
+          <span class="hero__name" data-prenom>Prénom</span>
+        </h1>
+        <svg class="heart hero__main-heart" aria-hidden="true"><use href="#heart"/></svg>
+        <p class="hero__sub">Une petite page rien que pour toi, remplie de nous.</p>
+        <a class="btn" href="#souvenirs">Découvrir nos souvenirs</a>
+      </div>
+    </section>
+
+    <!-- ============ NOTRE HISTOIRE ============ -->
+    <section class="section story" id="histoire">
+      <p class="label">Notre histoire</p>
+      <h2>Depuis le jour où tout a commencé</h2>
+      <span class="rule" aria-hidden="true"></span>
+      <!-- ✏️ Remplace ce texte par le tien -->
+      <p class="story__text">
+        Ici, un court paragraphe pour raconter votre histoire : votre rencontre,
+        ce que tu as ressenti, ce qui a rendu ces moments uniques. Quelques lignes
+        simples, sincères, à ton image.
+      </p>
+
+      <ul class="stats">
+        <li class="stat">
+          <span class="stat__num" id="stat-days">0</span>
+          <span class="stat__label">jours ensemble</span>
+        </li>
+        <li class="stat">
+          <span class="stat__num" id="stat-memories">0</span>
+          <span class="stat__label">souvenirs</span>
+        </li>
+        <li class="stat">
+          <span class="stat__num">1</span>
+          <span class="stat__label">seule personne</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ SOUVENIRS ============ -->
+    <section class="section section--white" id="souvenirs">
+      <p class="label">Nos souvenirs</p>
+      <h2>Les moments que je garde</h2>
+      <span class="rule" aria-hidden="true"></span>
+
+      <!--
+        ✏️ Pour changer une photo : remplace le fichier dans le dossier "images"
+        (photo1.jpg, photo2.jpg…) ou change le nom dans src="...".
+        ➕ Pour en ajouter : copie un bloc <figure> entier et colle-le à la suite.
+      -->
+      <div class="gallery">
+        <figure class="polaroid">
+          <div class="photo"><img src="images/photo1.jpg" alt="Notre première rencontre" loading="lazy" onerror="this.parentNode.classList.add('missing')"></div>
+          <figcaption>
+            <span class="polaroid__title">Notre première rencontre</span>
+            <span class="polaroid__date">JJ / MM / AAAA</span>
+          </figcaption>
+        </figure>
+
+        <figure class="polaroid">
+          <div class="photo"><img src="images/photo2.jpg" alt="Ce voyage inoubliable" loading="lazy" onerror="this.parentNode.classList.add('missing')"></div>
+          <figcaption>
+            <span class="polaroid__title">Ce voyage inoubliable</span>
+            <span class="polaroid__date">JJ / MM / AAAA</span>
+          </figcaption>
+        </figure>
+
+        <figure class="polaroid">
+          <div class="photo"><img src="images/photo3.jpg" alt="Une soirée juste à nous" loading="lazy" onerror="this.parentNode.classList.add('missing')"></div>
+          <figcaption>
+            <span class="polaroid__title">Une soirée juste à nous</span>
+            <span class="polaroid__date">JJ / MM / AAAA</span>
+          </figcaption>
+        </figure>
+
+        <figure class="polaroid">
+          <div class="photo"><img src="images/photo4.jpg" alt="Ton plus beau sourire" loading="lazy" onerror="this.parentNode.classList.add('missing')"></div>
+          <figcaption>
+            <span class="polaroid__title">Ton plus beau sourire</span>
+            <span class="polaroid__date">JJ / MM / AAAA</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ MOTS DOUX ============ -->
+    <section class="section" id="mots">
+      <p class="label">Mes mots pour toi</p>
+      <h2>Ce que j'aime chez toi</h2>
+      <span class="rule" aria-hidden="true"></span>
+
+      <!-- ✏️ Une carte par qualité : change le titre et le texte, copie un bloc pour en ajouter -->
+      <div class="words">
+        <article class="word">
+          <svg class="heart word__icon" aria-hidden="true"><use href="#heart"/></svg>
+          <div>
+            <h3>Ton rire</h3>
+            <p>Un petit mot sincère sur ce que ce détail change dans mes journées.</p>
+          </div>
+        </article>
+
+        <article class="word">
+          <svg class="heart word__icon" aria-hidden="true"><use href="#heart"/></svg>
+          <div>
+            <h3>Ta douceur</h3>
+            <p>Une phrase pour dire pourquoi tu me rends meilleur(e) chaque jour.</p>
+          </div>
+        </article>
+
+        <article class="word">
+          <svg class="heart word__icon" aria-hidden="true"><use href="#heart"/></svg>
+          <div>
+            <h3>Ta force</h3>
+            <p>Quelques mots pour te dire à quel point je suis fier(e) de toi.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ MESSAGE FINAL ============ -->
+    <section class="finale" id="surprise">
+      <svg class="heart finale__heart" aria-hidden="true"><use href="#heart"/></svg>
+      <h2>Joyeux anniversaire, mon amour</h2>
+      <!-- ✏️ Ton dernier message -->
+      <p class="finale__text">Un dernier message du cœur, plus long et plus intime, pour terminer en beauté.</p>
+
+      <button class="btn btn--light" id="surprise-btn" type="button" aria-expanded="false" aria-controls="surprise-box">
+        Ouvrir ma surprise
+      </button>
+
+      <div class="surprise" id="surprise-box" hidden>
+        <!-- ✏️ Le message caché qui apparaît au clic -->
+        <p>Ici, ta surprise : un secret, une promesse, une invitation… ce que tu veux.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Fait avec amour · <span data-year>2026</span></p>
+  </footer>
+
+  <script>
+/* =========================================================
+   ✏️ À MODIFIER : ces trois lignes suffisent à personnaliser le site
+   ========================================================= */
+const CONFIG = {
+  prenom: "Prénom",                    // son prénom, affiché en grand en haut
+  dateAnniversaire: "14 novembre 2026", // affichée au-dessus du titre
+  dateRencontre: "2023-02-14"          // format AAAA-MM-JJ, sert au compteur de jours
+};
+
+/* ---------- Ne touche pas à ce qui suit (sauf si tu sais ce que tu fais) ---------- */
+
+// Prénom, date et année
+document.querySelectorAll("[data-prenom]").forEach(el => (el.textContent = CONFIG.prenom));
+document.querySelectorAll("[data-date]").forEach(el => (el.textContent = CONFIG.dateAnniversaire));
+document.querySelectorAll("[data-year]").forEach(el => (el.textContent = new Date().getFullYear()));
+document.title = "Joyeux anniversaire " + CONFIG.prenom;
+
+// Compteur de jours ensemble
+(function () {
+  const start = new Date(CONFIG.dateRencontre + "T00:00:00");
+  const days = Math.floor((Date.now() - start.getTime()) / 86400000);
+  document.getElementById("stat-days").textContent =
+    Number.isFinite(days) && days > 0 ? days.toLocaleString("fr-FR") : "0";
+})();
+
+// Nombre de souvenirs = nombre de photos dans la galerie
+document.getElementById("stat-memories").textContent =
+  document.querySelectorAll(".polaroid").length;
+
+// Surprise : affiche le message caché + pluie de coeurs
+(function () {
+  const btn = document.getElementById("surprise-btn");
+  const box = document.getElementById("surprise-box");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function rain() {
+    for (let i = 0; i < 28; i++) {
+      const NS = "http://www.w3.org/2000/svg";
+      const svg = document.createElementNS(NS, "svg");
+      const use = document.createElementNS(NS, "use");
+      use.setAttribute("href", "#heart");
+      svg.appendChild(use);
+      svg.setAttribute("class", "heart rain-heart");
+      const size = 14 + Math.random() * 22;
+      svg.style.width = svg.style.height = size + "px";
+      svg.style.left = Math.random() * 100 + "vw";
+      svg.style.animationDuration = 3 + Math.random() * 3 + "s";
+      svg.style.animationDelay = Math.random() * 1.2 + "s";
+      svg.addEventListener("animationend", () => svg.remove());
+      document.body.appendChild(svg);
+    }
+  }
+
+  btn.addEventListener("click", () => {
+    const opening = box.hidden;
+    box.hidden = !opening;
+    btn.setAttribute("aria-expanded", String(opening));
+    btn.textContent = opening ? "Refermer ma surprise" : "Ouvrir ma surprise";
+    if (opening && !reduceMotion) rain();
+  });
+})();
+
+</script>
+</body>
+</html>
